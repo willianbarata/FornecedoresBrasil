@@ -13,5 +13,6 @@ namespace FornecedoresBrasil.Business.Models
         public bool Ativo { get; set; }
         public Endereco? Endereco { get; set; }
         public TipoFornecedor TipoFornecedor { get; set; }
+        public IEnumerable<Produto> produtos { get; set; }
     }
 }
