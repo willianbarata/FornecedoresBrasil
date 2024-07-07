@@ -13,7 +13,8 @@ namespace FornecedoresBrasil.Business.Servicees
     {
         private readonly IFornecedorRepository _fornecedorRepository;
 
-        public FornecedorServices(IFornecedorRepository fornecedorRepository)
+        public FornecedorServices(IFornecedorRepository fornecedorRepository,
+                              INotificador notificador) : base(notificador)
         {
             _fornecedorRepository = fornecedorRepository;
         }
